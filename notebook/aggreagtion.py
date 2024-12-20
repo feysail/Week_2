@@ -70,7 +70,7 @@ def sum(data,unique):
  'Other DL (Bytes)',
  'Other UL (Bytes)',
  'Total UL (Bytes)',
- 'Total DL (Bytes)']].mean().sort_values(ascending=False).head(10)
+ 'Total DL (Bytes)']].mean()
 
 def median(data,unique):
     return data.groupby(unique)[['Start ms',
